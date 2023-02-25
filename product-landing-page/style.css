@@ -1,0 +1,289 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+}
+
+#img {
+    width: 20vw;
+}
+
+#header-img {
+    width: 100%;
+    height: auto;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #nav-bar {
+        width: 50vw;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    #img {
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #img {
+        width: 35vw;
+    }
+
+    .nav-link {
+        font-size: 10px;
+    }
+}
+
+/* FORM */
+#form-section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.form-title {
+    margin-bottom: 15px;
+}
+
+#form {
+    width: 300px;
+    margin: 10px auto;
+}
+
+#email {
+    width: 100%;
+    max-width: 250px;
+    padding: 5px 3px;
+    border: 1px solid black;
+}
+
+#submit {
+    width: 100%;
+    max-width: 150px;
+    margin: 15px auto;
+    padding: 5px 10px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: #f1c40f;
+    border: 1px solid #f1c40f;
+    transition-duration: 1s;
+}
+
+#submit:hover {
+    background-color: #FFA500;
+}
+
+@media only screen and (max-width: 450px) {
+    .form-title {
+        font-size: 15px;
+    }
+
+    #form {
+        width: 100%;
+    }
+
+    #email {
+        width: 60%;
+    }
+
+    #submit {
+        width: 40%;
+        font-size: 12px;
+        padding-top: 7px;
+    }
+}
+
+/* FEATURES */
+#features {
+    width: 60%;
+    margin: 70px auto;
+}
+
+.feature-item {
+    display: grid;
+    grid-template-columns: auto 80%;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.feature-icon {
+    color: #FFA500;
+}
+
+@media only screen and (max-width: 1000px) {
+    #features {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    #features {
+        width: 80%;
+    }
+
+    .feature-icon {
+        font-size: 10px;
+    }
+
+    .feature-desc h2 {
+        font-size: 20px;
+    }
+
+    .feature-desc p {
+        font-size: 12px;
+    }
+}
+
+/* VIDEO */
+#how-it-work {
+    width: 600px;
+    margin: 50px auto;
+}
+
+#video {
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    #how-it-work {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #how-it-work {
+        width: 350px;
+        height: 300px;
+    }
+}
+
+/* PRICING */
+#pricing {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pricing-item {
+    line-height: 2;
+    text-align: center;
+    width: 300px;
+    padding-bottom: 10px;
+    border: 1px solid black;
+}
+
+.item-title {
+    background-color: #DDDDDD;
+    text-transform: uppercase;
+    padding: 12px 0;
+    margin-bottom: 10px;
+}
+
+.item-btn {
+    margin-top: 20px;
+    padding: 7px 10px;
+    background-color: #f1c40f;
+    border: 2px solid #f1c40f;
+    font-weight: bold;
+    transition-duration: 1s;
+}
+
+.item-btn:hover {
+    cursor: pointer;
+    background-color: #FFA500;
+}
+
+@media only screen and (max-width: 950px) {
+    #pricing {
+        grid-template-columns: 200px 200px 200px;
+    }
+
+    .pricing-item {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    #pricing {
+        grid-template-columns: 330px;
+    }
+
+    .pricing-item {
+        width: 330px;
+    }
+}
+
+/* FOOTER */
+#footer {
+    background-color: #DDDDDD;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+#footer ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#footer ul li {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+#footer span {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    color: #444;
+    font-size: 0.9em;
+}
